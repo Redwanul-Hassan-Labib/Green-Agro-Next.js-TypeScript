@@ -1,0 +1,115 @@
+//Pricing Style
+.pricing-section {
+	position: relative;
+	z-index: 1;
+	.pricing-element {
+		position: absolute;
+		right: 120px;
+		top: 120px;
+		z-index: -1;
+		animation: updown 2s linear infinite;
+	}
+}
+.pricing-itemsv1 {
+	border-radius: 20px;
+	border: 1px solid $p200-clr;
+	background: $white-clr;
+	box-shadow: 0px 10px 30px 0px rgba(42, 185, 57, 0.1);
+	padding: 40px;
+	position: relative;
+	h5 {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 30px;
+		color: $p900-clr;
+		margin-bottom: 10px;
+	}
+	.price {
+		gap: 10px;
+		align-items: flex-end;
+		margin-bottom: 40px;
+		h2 {
+			color: $p900-clr;
+		}
+		span {
+			font-size: 16px;
+			color: $p800-clr;
+			font-family: $body-font;
+		}
+	}
+	.pricing-list {
+		margin-bottom: 40px;
+		display: grid;
+		gap: 8px;
+		li {
+			display: flex;
+			align-items: center;
+			gap: 14px;
+			font-size: 16px;
+			color: $p800-clr;
+			font-family: $body-font;
+			i {
+				font-size: 16px;
+				color: $p1-clr;
+			}
+		}
+	}
+	.cmn-btn {
+		width: 100%;
+	}
+	.price-badge {
+		display: inline-block;
+		padding: 10px 8px 54px;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+		font-family: $body-font;
+		color: $white-clr;
+		background: $p1-clr;
+		clip-path: polygon(100% 0, 100% 100%, 49% 84%, 0 100%, 0 0);
+		writing-mode: vertical-rl;
+		position: absolute;
+		right: 40px;
+		top: 0;
+	}
+	&.active,
+	&:hover {
+		.cmn-btn {
+			background: $p1-clr;
+			color: $white-clr;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 24px;
+		h5 {
+			font-size: 20px;
+		}
+		.price {
+			gap: 10px;
+			margin-bottom: 24px;
+		}
+		.pricing-list {
+			margin-bottom: 30px;
+			gap: 8px;
+			li {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+				font-size: 14px;
+			}
+		}
+		.cmn-btn {
+			width: 100%;
+		}
+		.price-badge {
+			display: inline-block;
+			padding: 10px 4px 40px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 30px;
+			right: 10px;
+		}
+	}
+}
+//Pricing Style

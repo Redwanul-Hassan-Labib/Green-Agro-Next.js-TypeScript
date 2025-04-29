@@ -1,0 +1,38 @@
+{
+  "name": "farmhub-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start", 
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "next": "14.2.15",
+    "react": "^18",
+    "react-18-image-lightbox": "^5.1.4",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18",
+    "react-intersection-observer": "^9.13.1",
+    "react-modal-video": "^2.0.2",
+    "react-range": "^1.10.0",
+    "react-responsive-masonry": "^2.4.1",
+    "react-use": "^17.5.1",
+    "sass": "^1.80.2",
+    "sharp": "^0.33.5",
+    "swiper": "^11.1.14"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-modal-video": "^1.2.3",
+    "@types/react-responsive-masonry": "^2.1.3",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,94 @@
+//>>>>> Component Button Here <<<<<//
+.cmn-btn {
+	display: inline-block;
+	vertical-align: middle;
+	border: none;
+	outline: none !important;
+	color: $white-clr;
+	font-size: 15px;
+	font-weight: 400;
+	padding: 18px 30px 19px;
+	@include transition;
+	letter-spacing: 3px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	line-height: 1;
+	z-index: 9;
+	text-transform: capitalize;
+	background: $p1-clr;
+	i {
+		margin-left: 5px;
+		transition: all 0.4s;
+	}
+	&::before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		content: "";
+		width: 20px;
+		height: 20px;
+		background-color: $p2-clr;
+		z-index: -1;
+		transition: all 0.6s;
+		opacity: 0;
+		visibility: hidden;
+	}
+	&.cmn-white {
+		background: $white-clr;
+		color: $p900-clr;
+		i {
+			color: $p900-clr;
+		}
+	}
+	&.cmn-primary2 {
+		background: $p2-clr;
+		color: $p900-clr;
+		i {
+			color: $p900-clr;
+		}
+		&:hover {
+			&::before {
+				background: $p1-clr;
+			}
+			color: $white-clr;
+			i {
+				color: $white-clr;
+			}
+		}
+	}
+	&.primary-border {
+		background: transparent;
+		border: 1px solid $p1-clr;
+		color: $p900-clr;
+		i {
+			color: $p900-clr;
+		}
+		&:hover {
+			&::before {
+				background: $p1-clr;
+			}
+			color: $white-clr;
+			i {
+				color: $white-clr !important;
+			}
+		}
+	}
+
+	&:hover {
+		color: $p900-clr;
+		i {
+			color: $p900-clr;
+		}
+		&::before {
+			width: 120%;
+			height: 120%;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+//>>>>> Component Button End <<<<<//

@@ -1,0 +1,133 @@
+iframe {
+	width: 100%;
+	height: 500px;
+
+	@include breakpoint(max-md) {
+		height: 400px;
+	}
+	@include breakpoint(max-sm) {
+		height: 300px;
+	}
+}
+
+//Contact Version One
+.contact-infosectionv1 {
+	.contact-call-info {
+		display: flex;
+		gap: 30px;
+		h5 {
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 40px;
+			color: $p900-clr;
+		}
+		.co-box {
+			.pra {
+				font-size: 16px;
+				font-family: $body-font;
+				color: $p800-clr;
+				font-weight: 400;
+				line-height: 24px;
+			}
+		}
+		.icon {
+			min-width: 85px;
+			min-height: 85px;
+			width: 85px;
+			height: 85px;
+			border-radius: 50%;
+			background: $p1-clr;
+			i {
+				color: $white-clr;
+				font-size: 29px;
+			}
+		}
+		@include breakpoint(max-xxl) {
+			gap: 20px;
+			h5 {
+				font-size: 28px;
+				line-height: 40px;
+			}
+			.co-box {
+				.pra {
+					font-size: 15px;
+					line-height: 24px;
+				}
+			}
+			.icon {
+				min-width: 75px;
+				min-height: 75px;
+				width: 75px;
+				height: 75px;
+				i {
+					font-size: 29px;
+				}
+			}
+		}
+		@include breakpoint(max-xl) {
+			gap: 14px;
+			h5 {
+				font-size: 20px;
+				line-height: 40px;
+			}
+			.co-box {
+				.pra {
+					font-size: 14px;
+					line-height: 24px;
+					br{
+						display: none;
+					}
+				}
+			}
+			.icon {
+				min-width: 45px;
+				min-height: 45px;
+				width: 45px;
+				height: 45px;
+				i {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+//Common Contact Box
+.common-contact-inner {
+	background: $white-clr;
+}
+.conatact-box {
+	background: $white-clr;
+	box-shadow: 0px 10px 30px 0px rgba(42, 185, 57, 0.1);
+	border-radius: 20px;
+	padding: 60px;
+	position: relative;
+	z-index: 9;
+	form {
+		input,
+		textarea {
+			width: 100%;
+			outline: none;
+			border-radius: 20px;
+			border: 1px solid rgba(31, 78, 61, 0.2);
+			padding: 16px 12px;
+			color: $p800-clr;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 30px;
+	}
+	@include breakpoint(max-xs) {
+		padding: 15px;
+	}
+}
+
+//talking contact
+.talking-contact-box {
+	.conatact-box {
+		padding: 30px 50px 34px;
+		@include breakpoint(max-xxl) {
+			padding: 20px 24px 25px;
+		}
+	}
+}

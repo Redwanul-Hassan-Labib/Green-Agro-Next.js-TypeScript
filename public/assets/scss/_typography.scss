@@ -1,0 +1,461 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+$heading-font: "Noto Serif", sans-serif;
+$sub-font: "Mali", cursive;
+$body-font: "Montserrat", sans-serif;
+
+.heading-font {
+	font-family: $heading-font;
+}
+.sub-font {
+	font-family: $sub-font;
+}
+.body-font {
+	font-family: $body-font;
+}
+
+//font-family: "Font Awesome 6 Free";
+$fa: "Font Awesome 6 Free";
+// i{
+// 	line-height: 2;
+// }
+
+body {
+	font-family: $body-font;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 28px;
+	color: $p200-clr;
+	background-color: $white-clr;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+input:focus {
+	color: $white-clr;
+	outline: none;
+}
+
+input {
+	color: $white-clr;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $heading-font;
+	margin: 0px;
+	padding: 0;
+	color: $p700-clr;
+	@include transition;
+}
+
+h1 {
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 112%;
+}
+
+h2 {
+	font-size: 50px;
+	line-height: 116%;
+	font-weight: 700;
+	@include breakpoint(max-xl) {
+		font-size: 42px;
+	}
+	@include breakpoint(max-md) {
+		font-size: 36px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 28px;
+	}
+}
+h3 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 130%;
+	@include breakpoint(max-xxl) {
+		font-size: 28px;
+	}
+	@include breakpoint(max-xl) {
+		font-size: 26px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 22px;
+	}
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 130%;
+	@include breakpoint(max-xxl) {
+		font-size: 22px;
+	}
+	@include breakpoint(max-xl) {
+		font-size: 20px;
+	}
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 145%;
+}
+
+a {
+	text-decoration: none;
+	outline: none !important;
+	cursor: pointer;
+	color: $p700-clr;
+	@include transition;
+}
+
+p {
+	margin: 0px;
+	@include transition;
+	font-family: $body-font;
+	font-size: 16px;
+	line-height: 25.6px;
+}
+
+span {
+	font-size: 16px;
+	line-height: 25.6px;
+	margin: 0px;
+	@include transition;
+}
+
+// Custom Container
+.container {
+	@include breakpoint(max-lg) {
+		max-width: 1340px;
+		margin: 0 auto;
+	}
+	@include breakpoint(xxl){
+		.container{
+			max-width: 1325px;
+			margin: 0 auto;
+		}
+	}
+}
+// Custom Container
+
+//GLobal Center
+.d-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+//GLobal Center
+
+.trns {
+	transition: all 0.4s;
+}
+
+//Some Customization Margin Padding
+.round10 {
+	border-radius: 10px;
+}
+.round20 {
+	border-radius: 20px;
+}
+.round100 {
+	border-radius: 100px;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mb-24 {
+	margin-bottom: 24px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+//margin top
+.mt-60 {
+	margin-top: 60px;
+}
+.mt-50 {
+	margin-top: 50px;
+}
+.mt-40 {
+	margin-top: 40px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mt-24 {
+	margin-top: 24px;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+
+//Padding Space
+.pb-60 {
+	padding-bottom: 60px;
+}
+.pb-50 {
+	padding-bottom: 50px;
+}
+.pb-40 {
+	padding-bottom: 40px;
+}
+.pb-30 {
+	padding-bottom: 30px;
+}
+.pb-24 {
+	padding-bottom: 24px;
+}
+.pb-20 {
+	padding-bottom: 20px;
+}
+//margin top
+.pt-60 {
+	padding-top: 60px;
+}
+.pt-50 {
+	padding-top: 50px;
+}
+.pt-40 {
+	padding-top: 40px;
+}
+.pt-30 {
+	padding-top: 30px;
+}
+.pt-24 {
+	padding-top: 24px;
+}
+.pt-20 {
+	padding-top: 20px;
+}
+@include breakpoint(max-xxl) {
+	.mb-60 {
+		margin-bottom: 50px;
+	}
+	.mb-50 {
+		margin-bottom: 40px;
+	}
+	.mb-40 {
+		margin-bottom: 30px;
+	}
+	.mb-30 {
+		margin-bottom: 24px;
+	}
+	.mb-24 {
+		margin-bottom: 20px;
+	}
+	.mb-20 {
+		margin-bottom: 17px;
+	}
+	.mt-60 {
+		margin-top: 50px;
+	}
+	.mt-50 {
+		margin-top: 40px;
+	}
+	.mt-40 {
+		margin-top: 30px;
+	}
+	.mt-30 {
+		margin-top: 24px;
+	}
+	.mt-24 {
+		margin-top: 20px;
+	}
+	.mt-20 {
+		margin-top: 17px;
+	}
+
+	//Padding Space
+	.pb-60 {
+		padding-bottom: 50px;
+	}
+	.pb-50 {
+		padding-bottom: 40px;
+	}
+	.pb-40 {
+		padding-bottom: 30px;
+	}
+	.pb-30 {
+		padding-bottom: 24px;
+	}
+	.pb-24 {
+		padding-bottom: 20px;
+	}
+	.pb-20 {
+		padding-bottom: 17px;
+	}
+	//margin top
+	.pt-60 {
+		padding-top: 50px;
+	}
+	.pt-50 {
+		padding-top: 40px;
+	}
+	.pt-40 {
+		padding-top: 30px;
+	}
+	.pt-30 {
+		padding-top: 24px;
+	}
+	.pt-24 {
+		padding-top: 20px;
+	}
+	.pt-20 {
+		padding-top: 17px;
+	}
+}
+@include breakpoint(max-lg) {
+	.mb-60 {
+		margin-bottom: 40px;
+	}
+	.mb-50 {
+		margin-bottom: 30px;
+	}
+	.mb-40 {
+		margin-bottom: 24px;
+	}
+	.mb-30 {
+		margin-bottom: 20px;
+	}
+	.mb-24 {
+		margin-bottom: 16px;
+	}
+	.mb-20 {
+		margin-bottom: 15px;
+	}
+	.mt-60 {
+		margin-top: 40px;
+	}
+	.mt-50 {
+		margin-top: 30px;
+	}
+	.mt-40 {
+		margin-top: 24px;
+	}
+	.mt-30 {
+		margin-top: 20px;
+	}
+	.mt-24 {
+		margin-top: 16px;
+	}
+	.mt-20 {
+		margin-top: 15px;
+	}
+
+	//Padding Space
+	.pb-60 {
+		padding-bottom: 40px;
+	}
+	.pb-50 {
+		padding-bottom: 30px;
+	}
+	.pb-40 {
+		padding-bottom: 24px;
+	}
+	.pb-30 {
+		padding-bottom: 20px;
+	}
+	.pb-24 {
+		padding-top: 16px;
+	}
+	.pb-20 {
+		padding-bottom: 15px;
+	}
+	//margin top
+	.pt-60 {
+		padding-top: 40px;
+	}
+	.pt-50 {
+		padding-top: 30px;
+	}
+	.pt-40 {
+		padding-top: 24px;
+	}
+	.pt-30 {
+		padding-top: 20px;
+	}
+	.pt-24 {
+		padding-top: 16px;
+	}
+	.pt-20 {
+		padding-top: 15px;
+	}
+}
+
+.p100-bg{
+	background: $p100-clr;
+}
+
+.iconbg-v2 {
+	background: $p2-clr;
+}
+.iconbg-v3 {
+	background: $p1-clr;
+}
+.iconbg-v4 {
+	background: $p1-clr;
+}
+.iconbg-v5 {
+	background: $p1-clr;
+}
+//Some Customization Margin Padding
+
+//scroll top
+.scrollToTop {
+	position: fixed;
+	bottom: 0;
+	width: 40px;
+	height: 40px;
+	right: 30px;
+	background-color: $p1-clr;
+	padding: 0 12px;
+	color: $white-clr;
+	line-height: 120%;
+	font-size: 12px;
+	text-align: center;
+	z-index: 99;
+	cursor: pointer;
+	transition: all 1s;
+	transform: translateY(100%);
+}
+.scrollToTop.active {
+	bottom: 30px;
+	transform: translateY(0%);
+}

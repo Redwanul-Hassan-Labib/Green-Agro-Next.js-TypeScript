@@ -1,0 +1,170 @@
+.marquee-wrapper {
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 9;
+	margin-top: -15px;
+	margin-bottom: -30px;
+}
+
+.text-slider {
+	font-size: 60px;
+	height: 100px;
+	line-height: 90px;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: $p2-clr;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	@include breakpoint(max-md) {
+		font-size: 36px;
+	}
+
+	img {
+		margin-bottom: 10px;
+	}
+
+	&.text-color {
+		color: $p700-clr;
+	}
+
+	&.text-color-2 {
+		color: $p700-clr;
+		font-size: 50px;
+	}
+}
+
+.marquee-inner {
+	position: absolute;
+	display: inline-flex;
+	width: 200%;
+}
+
+.marquee-list {
+	float: left;
+	width: 50%;
+}
+
+.marquee-item {
+	float: left;
+	transition: animation 0.2s ease-out;
+}
+
+.marquee-inner.to-left {
+	animation: marqueeLeft 25s linear infinite;
+}
+
+@keyframes marqueeLeft {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -100%;
+	}
+}
+
+.marquee-inner.to-right {
+	animation: marqueeRight 25s linear infinite;
+}
+
+@keyframes marqueeRight {
+	0% {
+		right: 0;
+	}
+	100% {
+		right: -100%;
+	}
+}
+
+.marque-section-2 {
+	position: relative;
+
+	@include breakpoint(max-xl) {
+		margin-bottom: -20px;
+	}
+
+	@include breakpoint(max-lg) {
+		margin-bottom: -40px;
+	}
+}
+
+.progress_bar_item .item_bar {
+	background: red;
+	border-radius: 100px;
+	height: 11px;
+}
+.progress_bar_item .item_bar .progress {
+	border-radius: 100px;
+	background: $p1-clr;
+	height: 11px;
+}
+
+//Mixtup Plugin Fitler
+.filter-mixtup {
+	.all-catagorys {
+		display: grid;
+		grid-template-columns: 32% 32% 32%;
+		// grid-column-gap: 2.5%;
+		// grid-row-gap: 6%;
+		gap: 24px;
+	}
+	.all-catagorys .mix {
+		width: 100%;
+	}
+	.filter-btns {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		cursor: pointer;
+		button {
+			border-radius: 10px;
+			border: 1px solid $p200-clr;
+			padding: 5px 20px;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 30px;
+			color: $p900-clr;
+			font-family: $heading-font;
+			transition: all 0.4s;
+		}
+	}
+	button.mixitup-control-active {
+		background-color: $p1-clr;
+		color: $white-clr;
+	}
+	@include breakpoint(max-lg) {
+		.all-catagorys {
+			display: grid;
+			grid-template-columns: 48% 48%;
+			gap: 24px;
+		}
+	}
+	@include breakpoint(max-md) {
+		.all-catagorys {
+			display: grid;
+			grid-template-columns: 49% 49%;
+			gap: 14px;
+		}
+	}
+	@include breakpoint(max-sm) {
+		.filter-btns {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 12px 12px;
+			button {
+				font-size: 17px;
+				font-weight: 400;
+				line-height: 30px;
+			}
+		}
+		.all-catagorys {
+			display: grid;
+			grid-template-columns: 100%;
+			gap: 20px;
+		}
+	}
+}

@@ -1,0 +1,124 @@
+// team section style
+.team-itemsv01 {
+	overflow: hidden;
+	border-radius: 10px;
+	transition: all 0.4s;
+	width: 100%;
+	position: relative;
+	.mimg {
+		width: 100%;
+	}
+	.contents {
+		padding: 24px 30px 30px;
+		border-radius: 0px 10px 10px 10px;
+		background: rgba(7, 67, 7, 0.5);
+		backdrop-filter: blur(15px);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 93%;
+		z-index: 1;
+		.title {
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 40px;
+			font-family: $heading-font;
+			color: $white-clr;
+		}
+		span {
+			font-family: $body-font;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 30px;
+			color: $white-clr;
+			display: block;
+		}
+		.social-sahre {
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			z-index: 1;
+			.social-wrapper {
+				display: grid;
+				gap: 9px;
+				position: absolute;
+				bottom: 50px;
+				left: 0px;
+				transition: all 0.4s;
+				opacity: 0;
+				visibility: hidden;
+				transform: rotateY(90deg);
+				a {
+					border-radius: 50%;
+					border: 1px solid rgba(109, 117, 109, 0.4);
+					background: $white-clr;
+					i {
+						color: $p900-clr !important;
+					}
+					svg {
+						path {
+							fill: $p900-clr;
+						}
+					}
+					&:hover {
+						border-color: $white-clr;
+						color: $white-clr;
+						background: $p1-clr;
+						i {
+							color: $white-clr !important;
+						}
+						svg {
+							path {
+								fill: $white-clr;
+							}
+						}
+					}
+				}
+			}
+			.share-icon {
+				border-radius: 20px;
+				background: $p2-clr;
+				width: 37px;
+				height: 37px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				i {
+					font-size: 16px;
+				}
+				&:hover {
+					cursor: pointer;
+					.social-wrapper {
+						opacity: 1;
+						visibility: visible;
+						transform: rotateY(0deg);
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.contents {
+			padding: 18px 19px 19px;
+			.title {
+				font-size: 26px;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.contents {
+			padding: 14px 19px 19px;
+			.title {
+				font-size: 22px;
+			}
+            span{
+                font-size: 14px;
+            }
+		}
+	}
+	&:hover {
+		transform: translateY(5px);
+	}
+}
+// team section style

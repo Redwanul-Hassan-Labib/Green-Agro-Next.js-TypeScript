@@ -1,0 +1,251 @@
+//About Version01
+.about-section {
+	&.style-v01 {
+		overflow: hidden;
+		.about-thumv01 {
+			width: 100%;
+			padding: 0 50px;
+			.mimg {
+				width: 100%;
+			}
+			.f-food,
+			.l-food,
+			.t-food {
+				position: absolute;
+				left: 0;
+			}
+			.f-food {
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			.l-food {
+				top: 0;
+				left: 90px;
+			}
+			.t-food {
+				bottom: 0;
+				left: 90px;
+			}
+		}
+		.about-contentv1 {
+			h2 {
+				margin-bottom: 20px;
+			}
+			p {
+				color: $p800-clr;
+				margin-bottom: 30px;
+			}
+			.progress_bar {
+				margin-bottom: 40px;
+				.progress_bar_item {
+					.per-title {
+						margin-bottom: 15px;
+						.item_label,
+						.item_value {
+							font-size: 20px;
+							font-family: $heading-font;
+							font-weight: 400;
+						}
+					}
+					.item_bar {
+						height: 8px;
+						background: $p200-clr;
+						.progress {
+							height: 8px;
+							background: $p2-clr;
+						}
+					}
+				}
+			}
+			.about-list2 {
+				margin-bottom: 38px;
+			}
+		}
+		@include breakpoint(max-xxl) {
+			.about-thumv01 {
+				padding: 0 25px;
+			}
+		}
+		@include breakpoint(max-lg) {
+			.about-thumv01 {
+				padding: 0 0px;
+				.f-food,
+				.l-food,
+				.t-food {
+					width: 70px;
+				}
+			}
+			.about-contentv1 {
+				.about-list2 {
+					margin-bottom: 28px;
+				}
+			}
+		}
+	}
+}
+//About Version01
+
+//About Version02
+.about-list2 {
+	display: grid;
+	gap: 15px;
+	li {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: 16px;
+		line-height: 30px;
+		color: $p800-clr;
+		i {
+			color: $p1-clr;
+		}
+	}
+	@include breakpoint(max-lg) {
+		gap: 7px;
+		li {
+			font-size: 14px;
+		}
+	}
+}
+//About Version02
+
+//About Version03
+.about-wrapperv3 {
+	.progress_bar {
+		.progress_bar_item {
+			.per-title {
+				.item_label,
+				.item_value {
+					font-family: $heading-font;
+				}
+			}
+			.item_bar {
+				background: $p200-clr;
+				.progress {
+					background: $p1-clr !important;
+				}
+			}
+		}
+	}
+	.about-thumv03 {
+		position: relative;
+		width: 100%;
+		.mimg {
+			width: 100%;
+		}
+		.avarage-counting {
+			border-radius: 100px;
+			padding: 14px 20px 14px 14px;
+			background: $white-clr;
+			display: flex;
+			align-items: center;
+			gap: 17px;
+			position: absolute;
+			right: 90px;
+			bottom: 26px;
+			.avarag {
+				width: 72px;
+				height: 72px;
+				border-radius: 50%;
+				background: $p1-clr;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.cont {
+				h5 {
+					font-size: 20px;
+					font-weight: 400;
+					line-height: 30px;
+					color: $p900-clr;
+					margin-bottom: 2px;
+				}
+				span {
+					font-size: 14px;
+					color: $p800-clr;
+					font-weight: 400;
+					line-height: 160%;
+					font-family: $body-font;
+				}
+			}
+		}
+		.play-v3 {
+			position: absolute;
+			right: calc(100% - 66%);
+			top: calc(100% - 68%);
+			i {
+				font-size: 48px;
+				color: $p1-clr;
+			}
+			animation: palyzom 2s linear infinite;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.about-contentv1 {
+			h2 {
+				font-size: 40px;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.about-contentv1 {
+			h2 {
+				font-size: 34px;
+			}
+		}
+		.about-thumv03 {
+			.play-v3 {
+				right: calc(100% - 70%);
+				top: calc(100% - 68%);
+				i {
+					font-size: 48px;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.about-contentv1 {
+			h2 {
+				font-size: 34px;
+			}
+		}
+		.about-thumv03 {
+			.avarage-counting {
+				border-radius: 100px;
+				padding: 8px 10px 8px 10px;
+				gap: 10px;
+				right: 10px;
+				bottom: 20px;
+				.avarag {
+					width: 42px;
+					height: 42px;
+					img {
+						width: 21px;
+					}
+				}
+				.cont {
+					max-width: 140px;
+					h5 {
+						font-size: 16px;
+						line-height: 22px;
+					}
+					span {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.about-thumv03 {
+			.play-v3 {
+				right: calc(100% - 70%);
+				top: calc(100% - 68%);
+				i {
+					font-size: 39px;
+				}
+			}
+		}
+	}
+}
+//About Version03

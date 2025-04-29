@@ -1,0 +1,89 @@
+
+// Default Color Combine
+:root {
+	--body: #fff;
+	--black-clr: #000;
+	--white-clr: #fff;
+	--p1-clr: #2ab939;
+	--p2-clr: #fdd61f;
+	--p900-clr: #1f4e3d;
+	--pure900-clr: #225744;
+	--p800-clr: #6d756d;
+	--p700-clr: #191919;
+	--p200-clr: #e9efe5;
+	--p100-clr: #eff3ed;
+	--box-clr: #2A5747;
+	--shadow-clr: box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+// Default Color Combine
+$body: var(--body);
+$black-clr: var(--black-clr);
+$white-clr: var(--white-clr);
+$p1-clr: var(--p1-clr);
+$p2-clr: var(--p2-clr);
+$p900-clr: var(--p900-clr);
+$pure900-clr: var(--pure900-clr);
+$p800-clr: var(--p800-clr);
+$p700-clr: var(--p700-clr);
+$p200-clr: var(--p200-clr);
+$p100-clr: var(--p100-clr);
+$shadow-clr: var(--shadow-clr);
+$box-clr: var(--box-clr);
+
+
+// Default Scss Style Color Use In Hmtl
+.black-clr{
+    color: $black-clr !important;
+}
+.black-bg{
+    background: $black-clr !important;
+}
+.white-clr{
+    color: $white-clr !important;
+}
+.white-bg{
+    background: $white-clr !important;
+}
+.p1-clr{
+    color: $p1-clr !important;
+}
+.p1-bg{
+    background: $p1-clr !important;
+}
+.p2-clr{
+    color: $p2-clr !important;
+}
+.p2-bg{
+    background: $p2-clr !important;
+}
+.p900-clr{
+    color: $p900-clr !important;
+}
+.p900-bg{
+    background: $p900-clr !important;
+}
+.p800-clr{
+    color: $p800-clr !important;
+}
+.p800-bg{
+    background: $p800-clr !important;
+}
+.p700-clr{
+    color: $p700-clr !important;
+}
+.p700-bg{
+    background: $p700-clr !important;
+}
+.p200-clr{
+    color: $p200-clr !important;
+}
+.p200-bg{
+    background: $p200-clr !important;
+}
+.p100-clr{
+    color: $p100-clr !important;
+}
+.p100-bg{
+    background: $p100-clr !important;
+}
